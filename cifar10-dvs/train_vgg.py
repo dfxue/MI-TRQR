@@ -10,9 +10,6 @@ from functions import TET_loss, seed_all, get_logger
 from torch.utils.tensorboard import SummaryWriter
 from spikingjelly.datasets.cifar10_dvs import CIFAR10DVS
 from models import VGGSNN, VGGPSN, MaskedSlidingPSN
-# from torchinfo import summary
-# from thop import profile, clever_format 
-# from calflops import calculate_flops
 import torch.nn.functional as F
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

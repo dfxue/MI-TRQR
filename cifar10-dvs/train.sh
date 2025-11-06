@@ -1,0 +1,5 @@
+export CUDA_VISIBLE_DEVICES=0
+python train_vgg.py -b 32 --epochs 200 -method PSN -TET -T 4 
+# python train_vgg.py -b 32 --epochs 200 -method PSN -TET -T 8 
+# python train_vgg.py -b 32 --epochs 200 -method PSN -TET -T 10 
+

@@ -16,7 +16,7 @@ This code is based on the [PSN](https://github.com/fangwei123456/Parallel-Spikin
 The added code implements the MI-TRQR module, which is a plug-and-play module to quantify and reduce temporal redundancy, at the cost of zero parameters. 
 The implementation need the [TorchMetrics](https://lightning.ai/docs/torchmetrics/stable/) package.
 
-Here we provide a sample of quantify the redundancy between two binary spiking features: S1 and S2.
+Here we provide a sample of quantify the redundancy between two discrete tensors (spiking features): S1 and S2.
 
 ```python
 import torch

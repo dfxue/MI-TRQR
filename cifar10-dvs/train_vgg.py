@@ -112,10 +112,8 @@ def train(model, device, train_loader, criterion, optimizer, epoch, args):
         optimizer.step()
         total += float(labels.size(0))
         _, predicted = mean_out.cpu().max(1)
-        # _, predicted = output.cpu().max(1)
         correct += float(predicted.eq(labels.cpu()).sum().item())
         
-        # pdb.set_trace()
         train_firing_num += firing_num
         train_firing_num_t += firing_num_t
         train_firing_rate += firing_rate * images.shape[0]

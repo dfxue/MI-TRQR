@@ -23,7 +23,7 @@ import torch
 from torchmetrics.functional.clustering import mutual_info_score
 
 # Note: Both S1 and S2 must be int type.
-S1=S1.int()
-S2=S2.int()
+S1 = S1.int()
+S2 = S2.int()
 mi_value = mutual_info_score(S1, S2) # output: tensor(0.5004)
 ```
